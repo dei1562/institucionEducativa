@@ -10,7 +10,7 @@ import { Carrera } from './../_interface/carrera';
 })
 export class CarrerasService {
 
-  configUrl = 'https://github.com/dei1562/institucionEducativa/master/carreras.json'
+  configUrl = 'https://raw.githubusercontent.com/dei1562/institucionEducativa/master/src/assets/data/carreras.json'  
   
     constructor( private http : HttpClient ) { }
 

@@ -15,7 +15,7 @@
 
 <mat-grid-list cols="4" style="padding: 10px" *ngIf="carreras.length >0 else noData">   
 
-  <mat-grid-tile rowspan="4">
+  <mat-grid-tile rowspan="2">
 
     <mat-accordion class="carreras-headers-align">
       <mat-expansion-panel hideToggle="true" *ngFor="let j of carreras | filtroPorLetra: buscador; let i = index" [expanded]="step === i">
@@ -45,7 +45,9 @@
       <mat-card-header>
         <div mat-card-avatar class="carrera-header-image"></div>
         <mat-card-title>{{ j.nombre }}</mat-card-title>
-        <mat-card-subtitle>{{ equipo }}</mat-card-subtitle>
+        <mat-card-actions align="end">
+          <button mat-raised-button color="primary" (click)="desactivarJugador()" [disabled]="!j.estado">Desactivar</button>
+        </mat-card-actions>        
       </mat-card-header>
       <img mat-card-image src="http://via.placeholder.com/200x200?text=Foto+de+carrera">
     

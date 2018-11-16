@@ -1,9 +1,9 @@
-.jugadores-headers-align .mat-expansion-panel-header-title,
-.jugadores-headers-align .mat-expansion-panel-header-description {
+.carreras-headers-align .mat-expansion-panel-header-title,
+.carreras-headers-align .mat-expansion-panel-header-description {
   flex-basis: 0;
 }
 
-.jugadores-headers-align .mat-expansion-panel-header-description {
+.carreras-headers-align .mat-expansion-panel-header-description {
   justify-content: space-between;
   align-items: center;
 }
@@ -17,12 +17,12 @@
   overflow: scroll;
 }
 
-.jugadorInactivo {
+.carreraInactivo {
   animation: fadeOut 2s;
   animation-fill-mode: both;
 }
 
-.jugadorActivo {
+.carreraActivo {
   animation: fadeIn 2s;
   animation-fill-mode: both;
 }
@@ -53,4 +53,19 @@
 
 .search-input {
   width: 100%;
+}
+
+.carrera-card {
+  max-width: 350px;
+  max-height: 250px;
+  margin: 10px;
+}
+
+.carrera-header-image {
+  background-image: url('http://via.placeholder.com/50x50?text=thumb');
+  background-size: cover;
+}
+
+.pull-right {
+  text-align: right;
 }
