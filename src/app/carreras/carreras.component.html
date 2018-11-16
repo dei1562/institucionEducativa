@@ -1,0 +1,66 @@
+<h2>Carreras</h2>
+
+<mat-grid-list cols="4" rowHeight="100"> 
+    <mat-grid-tile colspan="1">        
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3">
+      <mat-form-field class="search-input">
+        <input matInput type="search" placeholder="Buscar Carrera" [(ngModel)]="buscador" />
+        <button mat-button matPrefix mat-icon-button>
+          <mat-icon> Search </mat-icon>
+        </button>
+      </mat-form-field>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="4" style="padding: 10px" *ngIf="carreras.length >0 else noData">   
+
+  <mat-grid-tile rowspan="4">
+
+    <mat-accordion class="carreras-headers-align">
+      <mat-expansion-panel hideToggle="true" *ngFor="let j of carreras | filtroPorLetra: buscador; let i = index" [expanded]="step === i">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ j.nombre }}
+          </mat-panel-title>
+          <mat-panel-description>
+            {{ j.posicion }}
+            <mat-icon>account_circle</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        
+        <p>Edad: {{ j.edad }}</p>
+        <p>Apodo: {{ j.apodo }}</p>
+        <p>Estado: {{ (j.estado) ? 'Activo' : 'Inactivo' }}</p>
+
+        <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarCarrera(j)">Activar</button>
+      
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </mat-grid-tile>
+
+  <mat-grid-tile *ngFor="let j of carreras | filtroPorLetra: buscador; let i=index">
+    <mat-card class="carrera-card">
+      <mat-card-header>
+        <div mat-card-avatar class="carrera-header-image"></div>
+        <mat-card-title>{{ j.nombre }}</mat-card-title>
+        <mat-card-subtitle>{{ equipo }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="http://via.placeholder.com/200x200?text=Foto+de+carrera">
+    
+      <mat-card-actions align="end">
+        <button mat-button color="primary" (click)="desactivarJugador()" [disabled]="!j.estado">Desactivar</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  
+</mat-grid-list>
+
+  <ng-template #noData> 
+  <div class="mat-evaluation-z8 noData">
+      <h2> No hay registro disponibles </h2>
+  </div>
+</ng-template>
+
+<ngx-spinner bdColor = 'rgba(51,51,51,0.8)' size = "medium " color = "#fff" type = "ball-atom"></ngx-spinner>

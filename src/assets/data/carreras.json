@@ -1,0 +1,62 @@
+[
+    {
+        "id": "5a8d0d8b5db17b2765e05a30",
+        "nombre": "Ingenieria Electronica",
+        "logo": "imagen.jpg",
+        "estado": false,
+        "creditos": 22,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant. Nisi nisl ridiculus ligula pharetra neque, ultricies at montes bibendum parturient duis, proin aptent sagittis pulvinar nascetur, quam torquent justo risus. Ultrices facilisis dui risus in parturient augue sed, placerat mi facilisi cum viverra eleifend quis vulputate, urna lacus litora class molestie rhoncus.",
+        "materias": [
+            "5a8d0d8b5db17b2765e05a40",
+            "5a8d0d8b5db17b2765e05a41",
+            "5a8d0d8b5db17b2765e05a42",
+            "5a8d0d8b5db17b2765e05a43",
+            "5a8d0d8b5db17b2765e05a44"
+        ]
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a31",
+        "nombre": "Ingenieria de Sistemas",
+        "logo": "imagen.jpg",
+        "estado": true,
+        "creditos": 25,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant. Nisi nisl ridiculus ligula pharetra neque, ultricies at montes bibendum parturient duis, proin aptent sagittis pulvinar nascetur, quam torquent justo risus. Ultrices facilisis dui risus in parturient augue sed, placerat mi facilisi cum viverra eleifend quis vulputate, urna lacus litora class molestie rhoncus.",
+        "materias": [
+            "5a8d0d8b5db17b2765e05a40",
+            "5a8d0d8b5db17b2765e05a41",
+            "5a8d0d8b5db17b2765e05a42",
+            "5a8d0d8b5db17b2765e05a43",
+            "5a8d0d8b5db17b2765e05a44"
+        ]
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a32",
+        "nombre": "Administración de Empresas",
+        "logo": "imagen.jpg",
+        "estado": true,
+        "creditos": 17,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant. Nisi nisl ridiculus ligula pharetra neque, ultricies at montes bibendum parturient duis, proin aptent sagittis pulvinar nascetur, quam torquent justo risus. Ultrices facilisis dui risus in parturient augue sed, placerat mi facilisi cum viverra eleifend quis vulputate, urna lacus litora class molestie rhoncus.",
+        "materias": [
+            "5a8d0d8b5db17b2765e05a40",
+            "5a8d0d8b5db17b2765e05a41",
+            "5a8d0d8b5db17b2765e05a42",
+            "5a8d0d8b5db17b2765e05a43",
+            "5a8d0d8b5db17b2765e05a44"
+        ]
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a33",
+        "nombre": "Contaduria",
+        "logo": "imagen.jpg",
+        "estado": false,
+        "creditos": 15,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant. Nisi nisl ridiculus ligula pharetra neque, ultricies at montes bibendum parturient duis, proin aptent sagittis pulvinar nascetur, quam torquent justo risus. Ultrices facilisis dui risus in parturient augue sed, placerat mi facilisi cum viverra eleifend quis vulputate, urna lacus litora class molestie rhoncus.",
+        "materias": [
+            "5a8d0d8b5db17b2765e05a40",
+            "5a8d0d8b5db17b2765e05a41",
+            "5a8d0d8b5db17b2765e05a42",
+            "5a8d0d8b5db17b2765e05a43",
+            "5a8d0d8b5db17b2765e05a44"
+        ]
+    }
+]
