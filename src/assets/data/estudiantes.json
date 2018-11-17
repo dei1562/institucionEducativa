@@ -1,0 +1,42 @@
+[
+    {
+        "id": "5a8d0d8b5db17b2765e05a60",
+        "nombre": "Denis Blay",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "correo": "etest@test.com",
+        "telefono": 3216587690
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a61",
+        "nombre": "Marni Holscher",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": "Ing. Electrico",
+        "correo": "etest2@test.com",
+        "telefono": 3231564781
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a62",
+        "nombre": "Brady Lizarraga",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "correo": "etest3@test.com",
+        "telefono": 3214568972
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a63",
+        "nombre": "Oma Toohey",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "correo": "etest4@test.com",
+        "telefono": 3215469873
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a64",
+        "nombre": "Lucio Kubat",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "correo": "etest4@test.com",
+        "telefono": 3215687564
+    }
+]

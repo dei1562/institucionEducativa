@@ -13,28 +13,27 @@
     </mat-grid-tile>
 </mat-grid-list>
 
-<mat-grid-list cols="4" rowHeight="650" *ngIf="carreras.length >0 else noData">   
+<mat-grid-list cols="4" rowHeight="660" *ngIf="carreras.length >0 else noData">   
 
   <mat-grid-tile rowspan="2">
 
     <mat-accordion class="carreras-headers-align">
       <mat-expansion-panel hideToggle="true" *ngFor="let j of carreras | filtroPorLetra: buscador; let i = index" [expanded]="step === i">
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header style="background-color: cornflowerblue">
           <mat-panel-title>
             {{ j.nombre }}
           </mat-panel-title>
-          <mat-panel-description>
-            {{ j.posicion }}
-            <mat-icon>account_circle</mat-icon>
-          </mat-panel-description>
         </mat-expansion-panel-header>
         
-        <p>Edad: {{ j.edad }}</p>
-        <p>Apodo: {{ j.apodo }}</p>
-        <p>Estado: {{ (j.estado) ? 'Activo' : 'Inactivo' }}</p>
+        <img mat-card-image [src]="j.logo" alt="Logo">
+        <h4>Descripcion</h4>
+        <p>{{ j.descripcion }}</p>
 
-        <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarCarrera(j)">Activar</button>
-      
+        <h4>Materias</h4>  
+        <div *ngFor="let y of j.materias; let z=index" style="padding-bottom: 8px;">
+          <button mat-raised-button color="primary" (click)="desactivarInformacion()" style="width: 100%">{{ y }}</button>
+        </div>
+
       </mat-expansion-panel>
     </mat-accordion>
 

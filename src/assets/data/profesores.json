@@ -1,0 +1,47 @@
+[
+    {
+        "id": "5a8d0d8b5db17b2765e05a50",
+        "nombre": "Kelli Kapinos",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "profesion": "Ing. Sistemas",
+        "correo": "test@test.com",
+        "telefono": 3216587695
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a51",
+        "nombre": "Geraldo Criddle",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "profesion": "Ing. Electrico",
+        "correo": "test2@test.com",
+        "telefono": 3231564789
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a52",
+        "nombre": "Kelli Kapinos",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "profesion": "Matematico",
+        "correo": "test3@test.com",
+        "telefono": 3214568976
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a53",
+        "nombre": "Chiquita Shi",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "profesion": "Ing. Sistemas",
+        "correo": "test4@test.com",
+        "telefono": 3215469875
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a54",
+        "nombre": "Adrienne Hotaling",
+        "foto": "./../../assets/img/algoritmia.jpg",
+        "estado": true,
+        "profesion": "Contador Publico",
+        "correo": "test4@test.com",
+        "telefono": 3215687563
+    }
+]

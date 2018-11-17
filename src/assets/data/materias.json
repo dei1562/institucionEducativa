@@ -1,0 +1,82 @@
+[
+    {
+        "id": "5a8d0d8b5db17b2765e05a40",
+        "nombre": "Algoritmia",
+        "logo": "./../../assets/img/algoritmia.jpg",
+        "estado": false,
+        "creditos": 22,
+        "estudiantes": [
+            "5a8d0d8b5db17b2765e05a60",
+            "5a8d0d8b5db17b2765e05a61",
+            "5a8d0d8b5db17b2765e05a62"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
+        "profesores": [
+            "5a8d0d8b5db17b2765e05a50"
+        ]
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a41",
+        "nombre": "Big Data",
+        "logo": "./../../assets/img/2018070516000433456.jpg",
+        "estado": false,
+        "creditos": 22,
+        "estudiantes": [
+            "5a8d0d8b5db17b2765e05a63",
+            "5a8d0d8b5db17b2765e05a64",
+            "5a8d0d8b5db17b2765e05a60"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
+        "profesores": [
+            "5a8d0d8b5db17b2765e05a51"
+        ]
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a42",
+        "nombre": "Calculo Diferencial",
+        "logo": "./../../assets/img/calculus.png",
+        "estado": false,
+        "creditos": 22,
+        "estudiantes": [
+            "5a8d0d8b5db17b2765e05a62",
+            "5a8d0d8b5db17b2765e05a61",
+            "5a8d0d8b5db17b2765e05a64"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
+        "profesores": [
+            "5a8d0d8b5db17b2765e05a52"
+        ]
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a43",
+        "nombre": "Electronica I",
+        "logo": "./../../assets/img/primavera-electrónica-1.jpg",
+        "estado": false,
+        "creditos": 22,
+        "estudiantes": [
+            "5a8d0d8b5db17b2765e05a60",
+            "5a8d0d8b5db17b2765e05a61",
+            "5a8d0d8b5db17b2765e05a64"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
+        "profesores": [
+            "5a8d0d8b5db17b2765e05a53"
+        ]
+    },
+    {
+        "id": "5a8d0d8b5db17b2765e05a44",
+        "nombre": "Contabilidad",
+        "logo": "./../../assets/img/tipos-de-software-de-contabilidad.jpg",
+        "estado": false,
+        "creditos": 22,
+        "estudiantes": [
+            "5a8d0d8b5db17b2765e05a62",
+            "5a8d0d8b5db17b2765e05a63",
+            "5a8d0d8b5db17b2765e05a60"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
+        "profesores": [
+            "5a8d0d8b5db17b2765e05a54"
+        ]
+    }
+]

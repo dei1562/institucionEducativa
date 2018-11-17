@@ -17,7 +17,7 @@
     {
         "id": "5a8d0d8b5db17b2765e05a31",
         "nombre": "Ingenieria de Sistemas",
-        "logo": "profesionalIngSis.jpg",
+        "logo": "./../../assets/img/profesionalIngSis.jpg",
         "estado": true,
         "creditos": 25,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
@@ -32,7 +32,7 @@
     {
         "id": "5a8d0d8b5db17b2765e05a32",
         "nombre": "Administración de Empresas",
-        "logo": "Administracion_de_Empresas_Disea_AlanHo91.png",
+        "logo": "./../../assets/img/Administracion_de_Empresas_Disea_AlanHo91.png",
         "estado": true,
         "creditos": 17,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
@@ -47,7 +47,7 @@
     {
         "id": "5a8d0d8b5db17b2765e05a33",
         "nombre": "Contaduria",
-        "logo": "contador_publico_Disea_Alanho91.png",
+        "logo": "./../../assets/img/contador_publico_Disea_Alanho91.png",
         "estado": false,
         "creditos": 15,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",

@@ -22,12 +22,11 @@
     <mat-card-title>{{ informacion.nombre }}</mat-card-title>
     <mat-card-actions align="end">
       <div fxFlex></div>
-      <button mat-raised-button color="primary" (click)="desactivarInformacion()" color="warn" *ngIf="!informacion.estado">Desactivar</button>
-      <button mat-raised-button color="primary" (click)="activarInformacion()" *ngIf="informacion.estado">Desactivar</button>
+      <button mat-raised-button color="primary" (click)="activarInformacion()" *ngIf="!informacion.estado">Activar</button>
+      <button mat-raised-button color="primary" (click)="desactivarInformacion()" color="warn" *ngIf="informacion.estado">Desactivar</button>
     </mat-card-actions>
   </mat-card-header>
-  <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
-  <img mat-card-image [src]="informacion.logo" alt="Photo of a Shiba Inu">
+  <img mat-card-image [src]="informacion.logo" alt="Logo">
   <mat-card-subtitle>Descripcion</mat-card-subtitle>
   <mat-card-content>
     <p>{{ informacion.descripcion }}</p>
@@ -35,6 +34,8 @@
 
   <mat-card-subtitle>Materias</mat-card-subtitle>  
   <mat-card-actions>
-    <button *ngFor="let j of informacion.materias; let i=index" mat-raised-button color="primary" (click)="desactivarInformacion()" [disabled]="!informacion.estado" style="width: 100%">{{ j }}</button>
+    <div *ngFor="let j of informacion.materias; let i=index" style="padding-bottom: 8px;">
+        <button mat-raised-button color="primary" (click)="desactivarInformacion()" style="width: 100%">{{ j }}</button>
+    </div>    
   </mat-card-actions>
 </mat-card>
