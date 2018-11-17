@@ -27,6 +27,7 @@ import{
   MatInputModule
 } from '@angular/material';
 import { InformacionComponent } from './informacion/informacion.component';
+import { PhonePipe } from './_pipes/phone.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { InformacionComponent } from './informacion/informacion.component';
     MateriasComponent,
     ProfesoresEstudiantesComponent,
     FiltroPorLetraPipe,
-    InformacionComponent
+    InformacionComponent,
+    PhonePipe
   ],
   imports: [
     BrowserModule,

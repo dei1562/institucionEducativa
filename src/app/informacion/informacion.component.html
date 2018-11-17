@@ -11,6 +11,10 @@
   <mat-card-subtitle>Descripcion</mat-card-subtitle>
   <mat-card-content>
     <p>{{ informacion.descripcion }}</p>
+
+    <p>
+      <strong>Creditos: </strong> {{ informacion.creditos | number }}
+    </p>
   </mat-card-content>
 
   <mat-card-subtitle *ngIf="ubicacion == 'carreras'">Materias</mat-card-subtitle>  

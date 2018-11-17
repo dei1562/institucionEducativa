@@ -29,7 +29,7 @@
         <!-- <img mat-card-image [src]="j.foto" alt="Foto"> -->
         <p *ngIf="j.profesion">Profesion: {{ j.profesion }}</p>
         <p>Correo: {{ j.correo }}</p>
-        <p>Telefono: {{ j.telefono }}</p>
+        <p>Telefono: {{ j.telefono | phone }}</p>
 
         <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarRegistro(j)">Activar</button>
       </mat-expansion-panel>
@@ -51,7 +51,7 @@
       <mat-card-content>
         <p *ngIf="informacion.profesion">Profesion: {{ informacion.profesion }}</p>
         <p>Correo: {{ informacion.correo }}</p>
-        <p>Telefono: {{ informacion.telefono }}</p>
+        <p>Telefono: {{ informacion.telefono | phone }}</p>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>

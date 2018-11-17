@@ -29,6 +29,10 @@
         <h4>Descripcion</h4>
         <p>{{ j.descripcion }}</p>
 
+        <p>
+          <strong>Creditos: </strong> {{ j.creditos | number }}
+        </p>
+
         <h4>Profesor</h4>  
         <div *ngFor="let y of j.profesores; let z=index" style="padding-bottom: 8px;">
           <button mat-raised-button color="primary" (click)="cargarInformacion(y, 'p')" style="width: 100%">{{ buscarNombre(y, 'p') }}</button>
