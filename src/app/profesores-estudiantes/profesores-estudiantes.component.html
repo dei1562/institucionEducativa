@@ -1,3 +1,67 @@
-<p>
-  profesores-estudiantes works!
-</p>
+<h2>{{ titulo }}</h2>
+
+<mat-grid-list cols="4" rowHeight="100"> 
+    <mat-grid-tile colspan="1">        
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3">
+      <mat-form-field class="search-input">
+        <input matInput type="search" [placeholder]="placeholder" [(ngModel)]="buscador" />
+        <button mat-button matPrefix mat-icon-button>
+          <mat-icon> Search </mat-icon>
+        </button>
+      </mat-form-field>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="4" rowHeight="300" *ngIf="datos.length >0 else noData">   
+
+  <mat-grid-tile rowspan="2">
+
+    <mat-accordion class="datos-headers-align">
+      <mat-expansion-panel hideToggle="true" *ngFor="let j of datos | filtroPorLetra: buscador; let i = index" [expanded]="step === i">
+        <mat-expansion-panel-header style="background-color: cornflowerblue">
+          <div mat-card-avatar class="informacion-header-image" [ngStyle]="{'background-image': 'url('+j.foto+')'}"></div>
+          <mat-panel-title style="color:white; font-weight: bold;">
+            {{ j.nombre }}
+          </mat-panel-title>          
+        </mat-expansion-panel-header>
+        
+        <!-- <img mat-card-image [src]="j.foto" alt="Foto"> -->
+        <p *ngIf="j.profesion">Profesion: {{ j.profesion }}</p>
+        <p>Correo: {{ j.correo }}</p>
+        <p>Telefono: {{ j.telefono }}</p>
+
+        <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarRegistro(j)">Activar</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </mat-grid-tile>
+
+  <mat-grid-tile *ngFor="let informacion of datos | filtroPorLetra: buscador; let i=index">
+    <mat-card class="informacion-card" (click)="mostrarDatos(i)">
+      <mat-card-header>
+        <div mat-card-avatar class="informacion-header-image" [ngStyle]="{'background-image': 'url('+informacion.foto+')'}"></div>
+        <mat-card-title>{{ informacion.nombre }}</mat-card-title>
+        <mat-card-actions align="end">
+          <div fxFlex></div>
+          <button mat-raised-button color="primary" (click)="desactivarInformacion(informacion)" color="warn" *ngIf="informacion.estado">Desactivar</button>
+        </mat-card-actions>
+      </mat-card-header>
+      <!-- <img mat-card-image [src]="informacion.foto" alt="Foto"> -->
+      <mat-card-content>
+        <p *ngIf="informacion.profesion">Profesion: {{ informacion.profesion }}</p>
+        <p>Correo: {{ informacion.correo }}</p>
+        <p>Telefono: {{ informacion.telefono }}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  
+</mat-grid-list>
+
+  <ng-template #noData> 
+  <div class="mat-evaluation-z8 noData">
+      <h2> No hay registro disponibles </h2>
+  </div>
+</ng-template>
+
+<ngx-spinner bdColor = 'rgba(51,51,51,0.8)' size = "medium " color = "#fff" type = "ball-atom"></ngx-spinner>

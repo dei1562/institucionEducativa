@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 import { Materia } from './../_interface/materia';
@@ -30,7 +30,7 @@ export class MateriasComponent implements OnInit {
 
   materiaMostrar:any;
 
-  constructor(private spinner : NgxSpinnerService, private estudiantesService: EstudiantesService, private profesoresService: ProfesoresService, private materiasService: MateriasService, private rutaActiva: ActivatedRoute) { }
+  constructor(private spinner : NgxSpinnerService, private estudiantesService: EstudiantesService, private profesoresService: ProfesoresService, private materiasService: MateriasService, private rutaActiva: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {   
 
@@ -166,8 +166,14 @@ export class MateriasComponent implements OnInit {
     return nombre;
   }
 
-  cargarInformacion(index) {
+  cargarInformacion(index, tipo) {
+    if(tipo == 'p') {
 
+      this.router.navigate(['/profesoresEstudiantes', 'profesores', index]);
+    }else if (tipo == 'e') {
+
+      this.router.navigate(['/profesoresEstudiantes', 'estudiantes', index]);
+    }
   }
 
 }

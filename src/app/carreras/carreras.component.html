@@ -20,7 +20,7 @@
     <mat-accordion class="carreras-headers-align">
       <mat-expansion-panel hideToggle="true" *ngFor="let j of carreras | filtroPorLetra: buscador; let i = index" [expanded]="step === i">
         <mat-expansion-panel-header style="background-color: cornflowerblue">
-          <mat-panel-title>
+          <mat-panel-title style="color:white; font-weight: bold;">
             {{ j.nombre }}
           </mat-panel-title>          
         </mat-expansion-panel-header>

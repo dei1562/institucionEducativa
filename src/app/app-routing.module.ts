@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'materias', component: MateriasComponent},
   { path: 'materias/:index', component: MateriasComponent},  
   { path: 'profesoresEstudiantes/:tipo', component: ProfesoresEstudiantesComponent},
+  { path: 'profesoresEstudiantes/:tipo/:index', component: ProfesoresEstudiantesComponent},
   { path: '', redirectTo: '/carreras', pathMatch: 'full'},
 ];
 

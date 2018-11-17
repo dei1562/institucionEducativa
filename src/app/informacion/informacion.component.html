@@ -1,21 +1,3 @@
-<!-- <mat-card class="informacion-card">
-  <mat-card-header>
-    <div mat-card-avatar class="informacion-header-image"></div>
-    <mat-card-title>{{ informacion.nombre }}</mat-card-title>
-    <mat-card-actions align="end">
-      <button mat-button color="primary" (click)="desactivarInformacion()" [disabled]="!informacion.estado">Desactivar</button>
-    </mat-card-actions>
-  </mat-card-header>
-  
-
-  <mat-card-content>
-    {{ informacion.descripcion }}
-  </mat-card-content>
-  <mat-card-actions align="end">
-    <button mat-button color="primary" (click)="desactivarInformacion()" [disabled]="!informacion.estado">Desactivar</button>
-  </mat-card-actions>
-</mat-card> -->
-
 <mat-card class="informacion-card">
   <mat-card-header>
     <div mat-card-avatar class="informacion-header-image"></div>
@@ -34,21 +16,21 @@
   <mat-card-subtitle *ngIf="ubicacion == 'carreras'">Materias</mat-card-subtitle>  
   <mat-card-actions *ngIf="ubicacion == 'carreras'">
     <div *ngFor="let j of informacion.materias; let i=index" style="padding-bottom: 8px;">
-        <button mat-raised-button color="primary" (click)="cargarInformacion(i)" style="width: 100%">{{ buscarNombre(j, 'm') }}</button>
+        <button mat-raised-button color="primary" (click)="cargarInformacion(i, 'm')" style="width: 100%">{{ buscarNombre(j, 'm') }}</button>
     </div>    
   </mat-card-actions>
 
   <mat-card-subtitle *ngIf="ubicacion == 'materias'">Profesores</mat-card-subtitle>  
   <mat-card-actions *ngIf="ubicacion == 'materias'">
     <div *ngFor="let j of informacion.profesores; let i=index" style="padding-bottom: 8px;">
-        <button mat-raised-button color="primary" (click)="cargarInformacion(i)" style="width: 100%">{{ buscarNombre(j, 'p') }}</button>
+        <button mat-raised-button color="primary" (click)="cargarInformacion(i, 'p')" style="width: 100%">{{ buscarNombre(j, 'p') }}</button>
     </div>    
   </mat-card-actions>
 
   <mat-card-subtitle *ngIf="ubicacion == 'materias'">Estudiantes</mat-card-subtitle>  
   <mat-card-actions *ngIf="ubicacion == 'materias'">
     <div *ngFor="let j of informacion.estudiantes; let i=index" style="padding-bottom: 8px;">
-        <button mat-raised-button color="primary" (click)="cargarInformacion(i)" style="width: 100%">{{ buscarNombre(j, 'e') }}</button>
+        <button mat-raised-button color="primary" (click)="cargarInformacion(i, 'e')" style="width: 100%">{{ buscarNombre(j, 'e') }}</button>
     </div>    
   </mat-card-actions>
 </mat-card>

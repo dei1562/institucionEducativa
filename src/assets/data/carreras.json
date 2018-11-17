@@ -8,7 +8,6 @@
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
         "materias": [
             "5a8d0d8b5db17b2765e05a40",
-            "5a8d0d8b5db17b2765e05a41",
             "5a8d0d8b5db17b2765e05a42",
             "5a8d0d8b5db17b2765e05a43",
             "5a8d0d8b5db17b2765e05a44"
@@ -22,10 +21,7 @@
         "creditos": 25,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
         "materias": [
-            "5a8d0d8b5db17b2765e05a40",
-            "5a8d0d8b5db17b2765e05a41",
             "5a8d0d8b5db17b2765e05a42",
-            "5a8d0d8b5db17b2765e05a43",
             "5a8d0d8b5db17b2765e05a44"
         ]
     },
@@ -52,10 +48,6 @@
         "creditos": 15,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
         "materias": [
-            "5a8d0d8b5db17b2765e05a40",
-            "5a8d0d8b5db17b2765e05a41",
-            "5a8d0d8b5db17b2765e05a42",
-            "5a8d0d8b5db17b2765e05a43",
             "5a8d0d8b5db17b2765e05a44"
         ]
     }

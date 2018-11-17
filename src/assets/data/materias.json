@@ -3,7 +3,7 @@
         "id": "5a8d0d8b5db17b2765e05a40",
         "nombre": "Algoritmia",
         "logo": "./../../assets/img/algoritmia.jpg",
-        "estado": false,
+        "estado": true,
         "creditos": 22,
         "estudiantes": [
             "5a8d0d8b5db17b2765e05a60",
@@ -19,7 +19,7 @@
         "id": "5a8d0d8b5db17b2765e05a41",
         "nombre": "Big Data",
         "logo": "./../../assets/img/2018070516000433456.jpg",
-        "estado": false,
+        "estado": true,
         "creditos": 22,
         "estudiantes": [
             "5a8d0d8b5db17b2765e05a63",
@@ -35,7 +35,7 @@
         "id": "5a8d0d8b5db17b2765e05a42",
         "nombre": "Calculo Diferencial",
         "logo": "./../../assets/img/calculus.png",
-        "estado": false,
+        "estado": true,
         "creditos": 22,
         "estudiantes": [
             "5a8d0d8b5db17b2765e05a62",
@@ -51,7 +51,7 @@
         "id": "5a8d0d8b5db17b2765e05a43",
         "nombre": "Electronica I",
         "logo": "./../../assets/img/primavera-electrónica-1.jpg",
-        "estado": false,
+        "estado": true,
         "creditos": 22,
         "estudiantes": [
             "5a8d0d8b5db17b2765e05a60",
@@ -67,7 +67,7 @@
         "id": "5a8d0d8b5db17b2765e05a44",
         "nombre": "Contabilidad",
         "logo": "./../../assets/img/tipos-de-software-de-contabilidad.jpg",
-        "estado": false,
+        "estado": true,
         "creditos": 22,
         "estudiantes": [
             "5a8d0d8b5db17b2765e05a62",

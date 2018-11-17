@@ -11,7 +11,7 @@
         "id": "5a8d0d8b5db17b2765e05a61",
         "nombre": "Marni Holscher",
         "foto": "./../../assets/img/women1.jpg",
-        "estado": "Ing. Electrico",
+        "estado": true,
         "correo": "etest2@test.com",
         "telefono": 3231564781
     },

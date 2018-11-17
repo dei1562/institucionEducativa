@@ -1,0 +1,60 @@
+.materias-headers-align .mat-expansion-panel-header-title,
+.materias-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.materias-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+:host ::ng-deep .mat-grid-tile .mat-figure {
+  align-items: unset !important;
+  padding: 20px;
+}
+
+.player-list {
+  overflow: scroll;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.noData {
+  text-align: center;
+  padding: 10px;
+  color: #673ab7;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.pull-right {
+    text-align: right;
+}
+
+.informacion-card {
+    max-width: 300px;
+    width: 300px;
+}
+
+.informacion-header-image {
+    background-image: url('http://via.placeholder.com/50x50?text=thumb');
+    background-size: cover;
+}

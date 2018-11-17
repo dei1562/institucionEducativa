@@ -82,9 +82,20 @@ export class InformacionComponent implements OnInit {
     return nombre;
   }
 
-  cargarInformacion(index) {
+  cargarInformacion(index, tipo) {
     if(this.ubicacion == 'carreras') {
+
       this.router.navigate(['/materias', index]);
+
+    } else if (this.ubicacion == 'materias') {
+
+      if(tipo == 'p') {
+
+        this.router.navigate(['/profesoresEstudiantes', 'profesores', index]);
+      }else if (tipo == 'e') {
+  
+        this.router.navigate(['/profesoresEstudiantes', 'estudiantes', index]);
+      }
     }
   }
 
