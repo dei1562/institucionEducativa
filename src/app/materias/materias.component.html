@@ -1,3 +1,66 @@
-<p>
-  materias works!
-</p>
+<h2>Materias</h2>
+
+<mat-grid-list cols="4" rowHeight="100"> 
+    <mat-grid-tile colspan="1">        
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3">
+      <mat-form-field class="search-input">
+        <input matInput type="search" placeholder="Buscar Materia" [(ngModel)]="buscador" />
+        <button mat-button matPrefix mat-icon-button>
+          <mat-icon> Search </mat-icon>
+        </button>
+      </mat-form-field>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="4" rowHeight="660" *ngIf="materias.length >0 else noData">   
+
+  <mat-grid-tile rowspan="2">
+
+    <mat-accordion class="materias-headers-align">
+      <mat-expansion-panel hideToggle="true" *ngFor="let j of materias | filtroPorLetra: buscador; let i = index" [expanded]="step === i">
+        <mat-expansion-panel-header style="background-color: cornflowerblue">
+          <mat-panel-title>
+            {{ j.nombre }}
+          </mat-panel-title>          
+        </mat-expansion-panel-header>
+        
+        <img mat-card-image [src]="j.logo" alt="Logo">
+        <h4>Descripcion</h4>
+        <p>{{ j.descripcion }}</p>
+
+        <h4>Profesor</h4>  
+        <div *ngFor="let y of j.profesores; let z=index" style="padding-bottom: 8px;">
+          <button mat-raised-button color="primary" (click)="cargarInformacion(z)" style="width: 100%">{{ buscarNombre(y, 'p') }}</button>
+        </div>
+
+        <h4>Estudiantes</h4>  
+        <div *ngFor="let y of j.estudiantes; let z=index" style="padding-bottom: 8px;">
+          <button mat-raised-button color="primary" (click)="cargarInformacion(z)" style="width: 100%">{{ buscarNombre(y, 'e') }}</button>
+        </div>
+
+        <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarCarrera(j)">Activar</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </mat-grid-tile>
+
+  <mat-grid-tile *ngFor="let j of materias | filtroPorLetra: buscador; let i=index">
+    <app-informacion [informacion]="j" 
+      [extra]="extra"
+      [ubicacion]="'materias'"
+      (onActive)="actualizarEstado(j,i,$event)"
+      (click)="mostrarDatos(i)"
+      [ngClass]="{'cardInactivo': !j.estado, 'cardActivo': j.estado}"
+      ></app-informacion>
+  </mat-grid-tile>
+  
+</mat-grid-list>
+
+  <ng-template #noData> 
+  <div class="mat-evaluation-z8 noData">
+      <h2> No hay registro disponibles </h2>
+  </div>
+</ng-template>
+
+<ngx-spinner bdColor = 'rgba(51,51,51,0.8)' size = "medium " color = "#fff" type = "ball-atom"></ngx-spinner>

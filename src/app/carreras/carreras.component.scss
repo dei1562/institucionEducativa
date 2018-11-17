@@ -17,16 +17,6 @@
   overflow: scroll;
 }
 
-.carreraInactivo {
-  animation: fadeOut 2s;
-  animation-fill-mode: both;
-}
-
-.carreraActivo {
-  animation: fadeIn 2s;
-  animation-fill-mode: both;
-}
-
 @keyframes fadeOut {
   0% {
     opacity: 1;

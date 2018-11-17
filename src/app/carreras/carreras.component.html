@@ -22,7 +22,7 @@
         <mat-expansion-panel-header style="background-color: cornflowerblue">
           <mat-panel-title>
             {{ j.nombre }}
-          </mat-panel-title>
+          </mat-panel-title>          
         </mat-expansion-panel-header>
         
         <img mat-card-image [src]="j.logo" alt="Logo">
@@ -31,9 +31,10 @@
 
         <h4>Materias</h4>  
         <div *ngFor="let y of j.materias; let z=index" style="padding-bottom: 8px;">
-          <button mat-raised-button color="primary" (click)="desactivarInformacion()" style="width: 100%">{{ y }}</button>
+          <button mat-raised-button color="primary" (click)="cargarInformacion(z)" style="width: 100%">{{ buscarNombre(y) }}</button>
         </div>
 
+        <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarCarrera(j)">Activar</button>
       </mat-expansion-panel>
     </mat-accordion>
 
@@ -41,9 +42,11 @@
 
   <mat-grid-tile *ngFor="let j of carreras | filtroPorLetra: buscador; let i=index">
     <app-informacion [informacion]="j" 
-      [equipo]="nombre" 
+      [extra]="extra"
+      [ubicacion]="'carreras'"
       (onActive)="actualizarEstado(j,i,$event)"
       (click)="mostrarDatos(i)"
+      [ngClass]="{'cardInactivo': !j.estado, 'cardActivo': j.estado}"
       ></app-informacion>
   </mat-grid-tile>
   

@@ -8,3 +8,13 @@ body{
     font-family: Roboto;
     margin: unset;
 }
+
+.cardInactivo {
+    animation: fadeOut 2s;
+    animation-fill-mode: both;
+}
+
+.cardActivo {
+    animation: fadeIn 2s;
+    animation-fill-mode: both;
+}
