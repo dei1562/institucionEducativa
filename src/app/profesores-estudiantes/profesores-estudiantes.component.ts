@@ -89,7 +89,7 @@ export class ProfesoresEstudiantesComponent implements OnInit {
 
             if(this.index){
 
-              if(this.index == value){
+              if(this.index == tmpData[value].id){
                 this.profesores.push(tmpData[value]);
               }
             } else {
@@ -119,7 +119,7 @@ export class ProfesoresEstudiantesComponent implements OnInit {
           for(let value in tmpData){
             if(this.index){
 
-              if(this.index == value){
+              if(this.index == tmpData[value].id){
                 this.estudiantes.push(tmpData[value]);
               }
             } else {

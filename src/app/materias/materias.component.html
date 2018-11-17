@@ -31,12 +31,12 @@
 
         <h4>Profesor</h4>  
         <div *ngFor="let y of j.profesores; let z=index" style="padding-bottom: 8px;">
-          <button mat-raised-button color="primary" (click)="cargarInformacion(z, 'p')" style="width: 100%">{{ buscarNombre(y, 'p') }}</button>
+          <button mat-raised-button color="primary" (click)="cargarInformacion(y, 'p')" style="width: 100%">{{ buscarNombre(y, 'p') }}</button>
         </div>
 
         <h4>Estudiantes</h4>  
         <div *ngFor="let y of j.estudiantes; let z=index" style="padding-bottom: 8px;">
-          <button mat-raised-button color="primary" (click)="cargarInformacion(z, 'e')" style="width: 100%">{{ buscarNombre(y, 'e') }}</button>
+          <button mat-raised-button color="primary" (click)="cargarInformacion(y, 'e')" style="width: 100%">{{ buscarNombre(y, 'e') }}</button>
         </div>
 
         <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarCarrera(j)">Activar</button>

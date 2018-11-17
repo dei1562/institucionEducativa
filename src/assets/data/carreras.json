@@ -3,7 +3,7 @@
         "id": "5a8d0d8b5db17b2765e05a30",
         "nombre": "Ingenieria Electronica",
         "logo": "./../../assets/img/programa_ing_electronica_02.jpg",
-        "estado": false,
+        "estado": true,
         "creditos": 22,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
         "materias": [
@@ -21,7 +21,10 @@
         "creditos": 25,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
         "materias": [
+            "5a8d0d8b5db17b2765e05a40",
+            "5a8d0d8b5db17b2765e05a41",
             "5a8d0d8b5db17b2765e05a42",
+            "5a8d0d8b5db17b2765e05a43",
             "5a8d0d8b5db17b2765e05a44"
         ]
     },
@@ -32,11 +35,8 @@
         "estado": true,
         "creditos": 17,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
-        "materias": [
-            "5a8d0d8b5db17b2765e05a40",
-            "5a8d0d8b5db17b2765e05a41",
+        "materias": [            
             "5a8d0d8b5db17b2765e05a42",
-            "5a8d0d8b5db17b2765e05a43",
             "5a8d0d8b5db17b2765e05a44"
         ]
     },
@@ -47,7 +47,8 @@
         "estado": false,
         "creditos": 15,
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit montes venenatis lobortis dis tincidunt dui, penatibus cursus primis imperdiet class magna cubilia curae aliquam nostra habitant.",
-        "materias": [
+        "materias": [            
+            "5a8d0d8b5db17b2765e05a42",
             "5a8d0d8b5db17b2765e05a44"
         ]
     }

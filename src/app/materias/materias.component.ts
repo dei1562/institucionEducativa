@@ -77,7 +77,7 @@ export class MateriasComponent implements OnInit {
         for(let value in tmpData){
           if(this.materiaMostrar){
 
-            if(this.materiaMostrar == value){
+            if(this.materiaMostrar == tmpData[value].id){
               this.materias.push(tmpData[value]);
             }
           } else {

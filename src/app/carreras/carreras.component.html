@@ -31,7 +31,7 @@
 
         <h4>Materias</h4>  
         <div *ngFor="let y of j.materias; let z=index" style="padding-bottom: 8px;">
-          <button mat-raised-button color="primary" (click)="cargarInformacion(z)" style="width: 100%">{{ buscarNombre(y) }}</button>
+          <button mat-raised-button color="primary" (click)="cargarInformacion(y)" style="width: 100%">{{ buscarNombre(y) }}</button>
         </div>
 
         <button *ngIf="!j.estado" mat-raised-button class="primary" (click)="activarCarrera(j)">Activar</button>
