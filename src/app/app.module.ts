@@ -26,6 +26,7 @@ import{
   MatFormFieldModule,
   MatInputModule
 } from '@angular/material';
+import { InformacionComponent } from './informacion/informacion.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import{
     CarrerasComponent,
     MateriasComponent,
     ProfesoresEstudiantesComponent,
-    FiltroPorLetraPipe
+    FiltroPorLetraPipe,
+    InformacionComponent
   ],
   imports: [
     BrowserModule,

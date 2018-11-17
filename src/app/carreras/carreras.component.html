@@ -13,7 +13,7 @@
     </mat-grid-tile>
 </mat-grid-list>
 
-<mat-grid-list cols="4" style="padding: 10px" *ngIf="carreras.length >0 else noData">   
+<mat-grid-list cols="4" rowHeight="650" *ngIf="carreras.length >0 else noData">   
 
   <mat-grid-tile rowspan="2">
 
@@ -41,20 +41,11 @@
   </mat-grid-tile>
 
   <mat-grid-tile *ngFor="let j of carreras | filtroPorLetra: buscador; let i=index">
-    <mat-card class="carrera-card">
-      <mat-card-header>
-        <div mat-card-avatar class="carrera-header-image"></div>
-        <mat-card-title>{{ j.nombre }}</mat-card-title>
-        <mat-card-actions align="end">
-          <button mat-raised-button color="primary" (click)="desactivarJugador()" [disabled]="!j.estado">Desactivar</button>
-        </mat-card-actions>        
-      </mat-card-header>
-      <img mat-card-image src="http://via.placeholder.com/200x200?text=Foto+de+carrera">
-    
-      <mat-card-actions align="end">
-        <button mat-button color="primary" (click)="desactivarJugador()" [disabled]="!j.estado">Desactivar</button>
-      </mat-card-actions>
-    </mat-card>
+    <app-informacion [informacion]="j" 
+      [equipo]="nombre" 
+      (onActive)="actualizarEstado(j,i,$event)"
+      (click)="mostrarDatos(i)"
+      ></app-informacion>
   </mat-grid-tile>
   
 </mat-grid-list>
