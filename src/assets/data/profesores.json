@@ -2,7 +2,7 @@
     {
         "id": "5a8d0d8b5db17b2765e05a50",
         "nombre": "Kelli Kapinos",
-        "foto": "./../../assets/img/algoritmia.jpg",
+        "foto": "./../../assets/img/women2.jpg",
         "estado": true,
         "profesion": "Ing. Sistemas",
         "correo": "test@test.com",
@@ -11,7 +11,7 @@
     {
         "id": "5a8d0d8b5db17b2765e05a51",
         "nombre": "Geraldo Criddle",
-        "foto": "./../../assets/img/algoritmia.jpg",
+        "foto": "./../../assets/img/men.jpg",
         "estado": true,
         "profesion": "Ing. Electrico",
         "correo": "test2@test.com",
@@ -19,8 +19,8 @@
     },
     {
         "id": "5a8d0d8b5db17b2765e05a52",
-        "nombre": "Kelli Kapinos",
-        "foto": "./../../assets/img/algoritmia.jpg",
+        "nombre": "Marni Kapinos",
+        "foto": "./../../assets/img/women2.jpg",
         "estado": true,
         "profesion": "Matematico",
         "correo": "test3@test.com",
@@ -29,7 +29,7 @@
     {
         "id": "5a8d0d8b5db17b2765e05a53",
         "nombre": "Chiquita Shi",
-        "foto": "./../../assets/img/algoritmia.jpg",
+        "foto": "./../../assets/img/women2.jpg",
         "estado": true,
         "profesion": "Ing. Sistemas",
         "correo": "test4@test.com",
@@ -38,7 +38,7 @@
     {
         "id": "5a8d0d8b5db17b2765e05a54",
         "nombre": "Adrienne Hotaling",
-        "foto": "./../../assets/img/algoritmia.jpg",
+        "foto": "./../../assets/img/women2.jpg",
         "estado": true,
         "profesion": "Contador Publico",
         "correo": "test4@test.com",
